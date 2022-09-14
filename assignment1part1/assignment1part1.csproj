@@ -1,0 +1,394 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{90C54BA3-5392-48FA-9699-8F885326427E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>assignment1part1</RootNamespace>
+    <AssemblyName>assignment1part1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44335</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MtAdminLogin.aspx" />
+    <Content Include="App_Data\Inventory.mdf" />
+    <Content Include="App_Data\Inventory_log.ldf">
+      <DependentUpon>Inventory.mdf</DependentUpon>
+    </Content>
+    <Content Include="Cart.aspx" />
+    <Content Include="CSS\StyleSheet1.css" />
+    <Content Include="History.aspx" />
+    <Content Include="images\asus.jpg" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\canon.jpg" />
+    <Content Include="images\catecom.jpg" />
+    <Content Include="images\catemp.jpg" />
+    <Content Include="images\catetv.jpg" />
+    <Content Include="images\iphone12.jpg" />
+    <Content Include="images\lgtv.jpg" />
+    <Content Include="images\master.jpg" />
+    <Content Include="images\products\asus.jpg" />
+    <Content Include="images\products\camera2.jpg" />
+    <Content Include="images\products\canon.jpg" />
+    <Content Include="images\products\iphone12pro.jpg" />
+    <Content Include="images\products\iphonese.jpg" />
+    <Content Include="images\products\macbookair.jpg" />
+    <Content Include="images\products\macbookpro.jpg" />
+    <Content Include="images\products\msi.jpg" />
+    <Content Include="images\products\samsungfold.jpg" />
+    <Content Include="images\products\samsungs21.jpg" />
+    <Content Include="images\visa.jpg" />
+    <Content Include="IphoneProduct.aspx" />
+    <Content Include="MtAbout.aspx" />
+    <Content Include="MtCart.aspx" />
+    <Content Include="MtCategoryDB.aspx" />
+    <Content Include="MtConfirmation.aspx" />
+    <Content Include="MtContact.aspx" />
+    <Content Include="MtCustomerDB.aspx" />
+    <Content Include="MtDisplayCustomerData.aspx" />
+    <Content Include="MtDisplayProductData.aspx" />
+    <Content Include="MtEmployeeDB.aspx" />
+    <Content Include="MtManagement.aspx" />
+    <Content Include="MtNewProductDB.aspx" />
+    <Content Include="MtOrder.aspx" />
+    <Content Include="MtOrderDB.aspx" />
+    <Content Include="MtPayment.aspx" />
+    <Content Include="MtPaymentDB.aspx" />
+    <Content Include="MtProductDB.aspx" />
+    <Content Include="MtSearch.aspx" />
+    <Content Include="MtHome.aspx" />
+    <Content Include="MtLogin.aspx" />
+    <Content Include="MtLogout.aspx" />
+    <Content Include="MtRegister.aspx" />
+    <Content Include="MtShipperDB.aspx" />
+    <Content Include="MtSupplierDB.aspx" />
+    <Content Include="Payment.aspx" />
+    <Content Include="ProductPage.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MtAdminLogin.aspx.cs">
+      <DependentUpon>MtAdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtAdminLogin.aspx.designer.cs">
+      <DependentUpon>MtAdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IphoneProduct.aspx.cs">
+      <DependentUpon>IphoneProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IphoneProduct.aspx.designer.cs">
+      <DependentUpon>IphoneProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masterindex.Master.cs">
+      <DependentUpon>masterindex.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masterindex.Master.designer.cs">
+      <DependentUpon>masterindex.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CartItems.cs" />
+    <Compile Include="BL\Customer.cs" />
+    <Compile Include="DAL\ListCartItems.cs" />
+    <Compile Include="BL\Product.cs" />
+    <Compile Include="MtAbout.aspx.cs">
+      <DependentUpon>MtAbout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtAbout.aspx.designer.cs">
+      <DependentUpon>MtAbout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtCart.aspx.cs">
+      <DependentUpon>MtCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtCart.aspx.designer.cs">
+      <DependentUpon>MtCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtCategoryDB.aspx.cs">
+      <DependentUpon>MtCategoryDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtCategoryDB.aspx.designer.cs">
+      <DependentUpon>MtCategoryDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtConfirmation.aspx.cs">
+      <DependentUpon>MtConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtConfirmation.aspx.designer.cs">
+      <DependentUpon>MtConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtContact.aspx.cs">
+      <DependentUpon>MtContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtContact.aspx.designer.cs">
+      <DependentUpon>MtContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtCustomerDB.aspx.cs">
+      <DependentUpon>MtCustomerDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtCustomerDB.aspx.designer.cs">
+      <DependentUpon>MtCustomerDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtDisplayCustomerData.aspx.cs">
+      <DependentUpon>MtDisplayCustomerData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtDisplayCustomerData.aspx.designer.cs">
+      <DependentUpon>MtDisplayCustomerData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtDisplayProductData.aspx.cs">
+      <DependentUpon>MtDisplayProductData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtDisplayProductData.aspx.designer.cs">
+      <DependentUpon>MtDisplayProductData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtEmployeeDB.aspx.cs">
+      <DependentUpon>MtEmployeeDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtEmployeeDB.aspx.designer.cs">
+      <DependentUpon>MtEmployeeDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtManagement.aspx.cs">
+      <DependentUpon>MtManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtManagement.aspx.designer.cs">
+      <DependentUpon>MtManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtNewProductDB.aspx.cs">
+      <DependentUpon>MtNewProductDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtNewProductDB.aspx.designer.cs">
+      <DependentUpon>MtNewProductDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtOrder.aspx.cs">
+      <DependentUpon>MtOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtOrder.aspx.designer.cs">
+      <DependentUpon>MtOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtOrderDB.aspx.cs">
+      <DependentUpon>MtOrderDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtOrderDB.aspx.designer.cs">
+      <DependentUpon>MtOrderDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtPayment.aspx.cs">
+      <DependentUpon>MtPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtPayment.aspx.designer.cs">
+      <DependentUpon>MtPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtPaymentDB.aspx.cs">
+      <DependentUpon>MtPaymentDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtPaymentDB.aspx.designer.cs">
+      <DependentUpon>MtPaymentDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtProductDB.aspx.cs">
+      <DependentUpon>MtProductDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtProductDB.aspx.designer.cs">
+      <DependentUpon>MtProductDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtSearch.aspx.cs">
+      <DependentUpon>MtSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtSearch.aspx.designer.cs">
+      <DependentUpon>MtSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtHome.aspx.cs">
+      <DependentUpon>MtHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtHome.aspx.designer.cs">
+      <DependentUpon>MtHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtLogin.aspx.cs">
+      <DependentUpon>MtLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtLogin.aspx.designer.cs">
+      <DependentUpon>MtLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtLogout.aspx.cs">
+      <DependentUpon>MtLogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtLogout.aspx.designer.cs">
+      <DependentUpon>MtLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtRegister.aspx.cs">
+      <DependentUpon>MtRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtRegister.aspx.designer.cs">
+      <DependentUpon>MtRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtShipperDB.aspx.cs">
+      <DependentUpon>MtShipperDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtShipperDB.aspx.designer.cs">
+      <DependentUpon>MtShipperDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MtSupplierDB.aspx.cs">
+      <DependentUpon>MtSupplierDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MtSupplierDB.aspx.designer.cs">
+      <DependentUpon>MtSupplierDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductPage.aspx.cs">
+      <DependentUpon>ProductPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductPage.aspx.designer.cs">
+      <DependentUpon>ProductPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="masterindex.Master" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\IISProfile1.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59928</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44335/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

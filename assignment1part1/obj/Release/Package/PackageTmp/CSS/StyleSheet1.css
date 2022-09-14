@@ -1,0 +1,433 @@
+﻿body { /*create font size and color for text*/
+    color: green; /*text color for body*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    background-color: lightpink;
+}
+#wrapper{
+    width: auto; /*giving width of wrapper auto with width of webpage*/
+    margin: auto; /*auto set the wrapper center of the screen*/
+    padding-bottom: 20px; /*put 20px between content and border*/
+    background-color:white; /*white area to put content*/
+}
+#banner{
+
+}
+#navigation{
+    height: 45px; /*height of navigation bar*/
+    background-color: lightblue; /*color of navigation bar*/
+}
+#nav{
+    display: block; /*make the navigaton display in a box*/
+    list-style: none;
+    text-align: center;
+}
+#nav ul { /*navigate unorder list css*/
+    display: none;
+    list-style: none;
+}
+#nav li { /*navigate list css*/
+    float:left; /*button will be float to left*/
+    display:block;
+    margin-top: 15px;
+    text-transform:uppercase; /*transform to capital letter*/
+    padding: 0px 20px 0px 20px;
+    border-left: 1px solid #00ffff;
+}
+#nav a:link, #nav a:visited, #nav a:active{
+    display:block;
+    color: red;
+    text-decoration: none;
+}
+#nav a:hover { /*when cursor hover, text become yellow*/
+    background-color: yellow;
+}
+#content{ /* welcome status*/
+    padding: 20px;
+    text-align:center;
+    font-size: 40px;
+    color: blue;
+    background-color:yellow;
+}
+#img{ /*css images*/
+    width: 100%;
+    display: block;
+}
+
+/*product css*/
+.card { /*product card*/
+    box-shadow: 0 5px 9px 0 rgb(128, 128, 128); 
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    background-color: lightblue;
+}
+
+.price { /*price of product*/
+    font-size: 23px;
+}
+/*button add to cart*/
+.card button {
+    border: none;
+    outline: 0;
+    padding: 13px;
+    color: pink;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer; /* when click in "add to cart" the cursor will be a pointer*/
+    width: 100%;
+    font-size: 20px;
+}
+.card button:hover { /* when hover the button become opacity*/
+    opacity: 0.5;
+}
+table { /* css table for product*/
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+    padding-bottom: 20px;
+}
+/*css for copy right*/
+.copy-right {
+    background-color:lightcoral;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    text-align: center;
+    
+}
+
+.copy-right p {
+    font-family: "Lucida Console", Courier, monospace; /* customize font family for  copy right statement*/
+    color: black;
+}
+/*css  for search page*/
+.box{ /*create a box in center of screen*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:500px;
+    transform: translate(-50%,-50%);
+}
+/*css for iphoneproduct page*/
+
+#productdisplay table{ /*css for text in table*/
+    margin-top: 50px;
+    color: blue;
+    font-style: oblique;
+    font-size: 15px;
+    
+}
+
+/*shopping cart page*/
+.cartpage{
+    margin:80px auto;
+}
+.tablecart{
+    width: 100%;
+    border-collapse: collapse; /* collapsing between 2 tables*/
+}
+.infocart{
+    display: flex; /*flex item in same size*/
+    flex-wrap: wrap;
+}
+th{ /*css for table head*/
+    text-align: left;
+    padding:5px;
+    color: black;
+    background: steelblue;
+    font-weight: normal;
+}
+.cartpage td{ /*css for table data*/
+    padding:11px 6px;
+}
+.totalprice{ /*css for total*/
+    display: flex; /*flex in same size*/
+    justify-content: flex-end;
+}
+.totalprice table{ /*small table for calculate total*/
+    border-top:4px solid steelblue;
+    width: 100%;
+    max-width: 400px;
+}
+.cartpage td:last-child{ /*align last column to right*/
+    text-align:right;
+}
+.cartpage th:last-child { /*align last column to right*/
+    text-align: right;
+}
+/*cart page*/
+.productdisplay{
+    margin-top: 82px;
+}
+/*payment page*/
+.paycont{ /*create small box to put payment inside*/
+    width:350px;
+    background-color: lightblue;
+    margin-left:auto; /*auto in center*/
+    margin-right:auto;
+}
+.box1{ /* i create 7 box for 7 different fields for easily arrange*/
+    height: 100px;
+}
+.box1 h1{
+    text-align:center;
+}
+.box2 {
+    height: 150px;
+    text-align: center;
+}
+.box3{
+    margin:2px;
+}
+.box4{
+    margin-top:15px;
+}
+.box5 {
+    margin-top:15px;
+}
+.box5, .box6 {
+    display: inline-block;
+}
+.box6{
+    float:right;
+    margin-top:15px
+}
+.box7{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+/*purchase history page*/
+.auto-style12 {
+    
+    background-color: lightblue;
+}
+#history{ /*table for history purchase*/
+    border-collapse: collapse;
+    width: 100%;
+    background-color:white;
+}
+#history td {
+    border: 2px dotted grey; /*use dotted for table border*/
+    padding: 10px;
+    margin-left:2px;
+}
+#history th {
+    border: 2px solid darkblue;
+    padding: 10px;
+    margin-left:2px;
+    color: red;
+    text-align: center;
+}
+#history p{
+    margin-bottom:50px;
+}
+/*contact page*/
+.contactf { /*create small box to put contact inside*/
+    width: 500px;
+    background-color: lightblue;
+    margin: 20px auto 10px auto;
+}
+.contactf p, .contactf h1{ /*css for text*/
+    text-align: center;
+}
+.contactf h3{
+    margin:5px;
+}
+.consub {
+    margin-top: 20px;
+}
+/*login page*/
+.login { /*create small box to put login inside*/
+    width: 380px;
+    background-color: lightblue;
+    margin: 20px auto 10px auto;
+}
+.login h1{ /*css for text*/
+    text-align:center;
+}
+.login .pas{
+    margin-bottom: 30px;
+}
+/*register page*/
+.regis { /*create small box to put regis inside*/
+    width: 450px;
+    
+    background-color: lightblue;
+    margin: 20px auto 10px auto;
+}
+.regis h1{
+    text-align:center;
+}
+/*about page*/
+.abu { /*create small box to put about inside*/
+    width: 450px;
+    background-color: lightblue;
+    margin: 20px auto 10px auto; /*auto in center*/
+}
+.abu .ro1{ /*css for about*/
+    display: block;
+    margin: 5px 5px 5px 5px;
+}
+.abu .ro1 h1{
+    text-align:center;
+    color:blue;
+}
+.abu .ro2{
+    text-align:right;
+    margin-right: 5px;
+}
+/*main page*/
+.main { /*create small box to put category inside*/
+    width: 100%;
+    background-color: white;
+    margin: 20px auto 10px auto;
+}
+.main td{ /*css for category table*/
+    font-size:30px;
+    font-style: italic;
+}
+.main h1{
+    color: yellow;
+    background-color:red;
+    text-align:center;
+}
+.main table{
+    margin-top: 100px;
+}
+/*management page*/
+.manage { /*small box to put list inside*/
+    width: 600px;
+    background-color: lightblue;
+    margin: 20px auto 10px auto; /*auto in center*/
+}
+.manage h1{
+    color:yellow;
+    background-color:red;
+    text-align:center
+}
+.manage p{
+    text-align:center;
+}
+/*manage products page*/
+.manadb {
+    width: 800px;
+    background-color: lightblue;
+    margin: 20px auto 10px auto; /*auto in center*/
+}
+.manadb h1{
+    color:yellow;
+    background-color:red;
+    text-align:center
+}
+.manadb .manatb{
+    margin: 20px auto;
+}
+.manadb h2{
+    text-align: center;
+    color: yellow
+}
+.manasup { /*css for bigger frame*/
+    width: 1250px;
+    background-color: lightblue;
+    margin: 20px auto 10px auto; /*auto in center*/
+}
+.manasup h1 { 
+    color: yellow;
+    background-color: red;
+    text-align: center
+}
+.manasup h2 {
+    text-align: center;
+    color: yellow
+}
+/*css for new order page*/
+.neworder { /*create small box to put about inside*/
+    width: 1000px;
+    background-color: white;
+    margin: 20px auto 10px auto; /*auto in center*/
+    padding: 2px;
+    border: 1px solid pink;
+}
+.contain {
+    margin: 0 auto;
+    padding: 15px;
+    display: flex; /*allow display the column*/
+    max-width: 1000px;
+}
+.ddlorder {
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    background-color: steelblue;
+}
+
+.ddlorder .h3 {
+    margin-left: 10px;
+}
+.rightcolumn {
+    width: 40%;
+    margin: 60px 1px 10px 1px;
+}
+.btnorder {
+    display: inline-block;
+    margin: 5px 5px 5px 5px;
+    background-color: darkseagreen;
+    color: ghostwhite;
+    font-size: 20px;
+}
+.leftcolumn {
+    width: 60%;
+    position: relative;
+}
+.auto-style16{
+    position: absolute; /*for image*/
+}
+.productdes {
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+.productdes h3 {
+    color: dodgerblue;
+    text-transform: uppercase;
+}
+.productdes h1 {
+    font-size: 45px;
+    color: tomato;
+}
+.productdes p {
+    font-size: 14px;
+    color: navy;
+    line-height: 22px;
+}
+.productquan {
+    border-bottom: 1px solid gray;
+    margin-bottom: 22px;
+}
+.productprice{
+    display: flex;
+    align-items: center;
+}
+.auto-style16 {
+    width: 507px;
+    height: 414px;
+}
+/*css for newcart.aspx*/
+.newCart { /*create small box to put about inside*/
+    width: 1000px;
+    background-color: white;
+    margin: 20px auto 10px auto; /*auto in center*/
+    padding: 2px;
+    border: 1px solid pink;
+}
+/*css for new payment*/
+.newCheck {
+    width: 600px;
+    background-color: lightblue;
+    margin: 20px auto 10px auto; /*auto in center*/
+    padding: 5px;
+    border: 1px solid pink;
+}

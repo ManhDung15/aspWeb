@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterindex.master.cs" Inherits="assignment1part1.masterindex" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="CSS/Stylesheet1.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div>
+            <div id ="wrapper"> <!-- wrap all webpage content in a wrapper with css -->
+                <div>
+                    <h1><asp:HyperLink runat="server" NavigateUrl="~/MtHome.aspx">BLUE ELECTRO</asp:HyperLink></h1> <!--company name at the top left conner -->
+                </div>
+                <div id="banner"> <!--image banner -->
+                    <asp:Image ID="Image1" runat="server" Height="268px" ImageUrl="~/images/banner.jpg" Width="100%" />
+                </div>
+                <div id="navigation"><!-- navigtion the unorder list and use css to make it inline -->
+                    <ul id="nav"> <!--using hyperrlink to link pages-->
+                        <li><asp:HyperLink runat="server" NavigateUrl="~/MtOrder.aspx">PRODUCT</asp:HyperLink></li> <!--float to left-->
+                        <li><asp:HyperLink runat="server" NavigateUrl="~/MtAbout.aspx">ABOUT US</asp:HyperLink></li>
+                        <li><asp:HyperLink runat="server" NavigateUrl="~/MtContact.aspx">CONTACT</asp:HyperLink></li>
+                        <li><asp:HyperLink runat="server" NavigateUrl="~/MtSearch.aspx">SEARCH</asp:HyperLink></li>
+                        <!-- button login and shopping cart is float on right -->
+                                                
+                        <li style="float:right"> 
+                            <asp:HyperLink runat="server" NavigateUrl="~/MtCart.aspx">CART</asp:HyperLink> <!--float to right-->
+                        </li>
+                        <li style="float:right">
+                            
+                            <asp:Button ID="btnlogout" runat="server" Text="logout" CssClass="btnorder" OnClick="btnlogout_Click" PostBackUrl="~/MtLogout.aspx" />
+                            <asp:Button ID="btnlogin" runat="server" Text="login"  CssClass="btnorder" OnClick="btnlogin_Click" PostBackUrl="~/MtLogin.aspx" />
+                        </li>
+                        
+                    </ul>
+
+                </div>
+                <div id ="content"> <!--welcome content -->
+                    <p>>~~> welcome to blue electro <~~<</p>
+                </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                </asp:ContentPlaceHolder>
+                
+                <div class="copy-right text-center"> <!--copy right sentence at the end of the webpage --> 
+			        <p>Copyright 2021 - blueelectro@gmail.com - Electronic Website<br/> 
+                        <a href="#"> <strong> Welcome </strong> </a></p>	
+		        </div>
+           </div>
+
+        </div>
+            
+        </div>
+    </form>
+</body>
+</html>
